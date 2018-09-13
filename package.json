@@ -18,14 +18,18 @@
   },
   "homepage": "https://github.com/leer0911/myKoa#readme",
   "dependencies": {
-    "koa": "^2.5.2",
-    "koa-router": "^7.4.0"
+    "class-validator": "^0.9.1",
+    "koa": "^2.5.1",
+    "koa-body": "^4.0.4",
+    "koa-router": "^7.4.0",
+    "sqlite3": "^4.0.2",
+    "typeorm": "^0.2.7"
   },
   "devDependencies": {
-    "@types/koa": "^2.0.46",
-    "@types/koa-router": "^7.0.31",
+    "@types/koa": "2.0.44",
+    "@types/koa-router": "^7.0.28",
     "nodemon": "^1.18.4",
-    "ts-node": "^7.0.1",
-    "typescript": "^3.0.3"
+    "ts-node": "^6.0.3",
+    "typescript": "^3.0.1"
   }
 }
