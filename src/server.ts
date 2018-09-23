@@ -16,6 +16,6 @@ export const createApp = () => {
   );
 };
 
-createConnections(dbConnectionOpts)
+createConnections()
   .then(createApp)
   .catch(error => console.log('TypeORM connection error: ', error));

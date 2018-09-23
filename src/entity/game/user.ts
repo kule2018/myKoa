@@ -2,7 +2,7 @@ import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('user', {
   orderBy: {
-    score: 'DESC'
+    score2: 'DESC'
   }
 })
 export class User {
@@ -16,8 +16,8 @@ export class User {
   userName: string;
 
   @Column()
-  avatar: string;
+  avatar2: string;
 
   @Column()
-  score: number;
+  score2: number;
 }

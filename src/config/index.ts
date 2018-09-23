@@ -12,6 +12,17 @@ export const dbConnectionOpts: ConnectionOptions[] = [
     database: locateDb('game'),
     entities: [locateEntities('game')],
     entityPrefix: 'gm_',
-    logging: true
+    migrations: [
+      "src/migration/**/*.ts"
+    ],
+    subscribers: [
+      "src/subscriber/**/*.ts"
+    ],
+    cli: {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+    },
+    logging: true,
   }
 ];
